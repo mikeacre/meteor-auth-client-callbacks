@@ -25,7 +25,7 @@ Accounts._callHooksLogout = function() {
   });
 }
 
-Meteor.autorun(function() {
+Meteor.startup(function() {
   if (Meteor.userId()) {
     Accounts._callHooksLogin();
   } else {
